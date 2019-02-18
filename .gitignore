@@ -1,0 +1,43 @@
+.DS_Store
+jslint_report.xml
+*.log
+*.sublime(.*)$
+
+#ignore node_modules, as the node project is not "deployed" per se: http://www.mikealrogers.com/posts/nodemodules-in-git.html
+/node_modules
+/bower_components
+
+/dist
+/generated
+/scratch
+
+# Ignore .gitignore and target folders
+src/*/.gitignore
+src/*/target/
+/target
+/build
+Gruntfile.js
+package.json
+
+# Ignore Eclipse project and settings files
+.classpath
+.settings
+.project
+.externalToolBuilders
+
+# Ignore IntelliJ project and settings files
+.idea
+*.iml
+
+# Ignore temp folders
+grunt/bin
+
+# Ignore npm files/folders
+node_modules
+npm-debug.log
+
+# Ignore bower folder
+bower_components
+
+# sdk
+/resources

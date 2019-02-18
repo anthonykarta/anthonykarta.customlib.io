@@ -320,7 +320,7 @@ sap.ui.define([
 				this._ProcessBarCodeResult(mArguments);
 				this._setResult(this._getCurrentDate(), "/Root/Lead/ReferenceDate");
 				this._setResultIntoNearest("102","/Root/JobType1_3a41b900b57ea2e2555fca9888158af2"); //Job Type as "Replace/New" on scan
-				this._triggerLeadOnSave();
+				// don't save as requested -- this._triggerLeadOnSave();
 			} catch (e) {
 				jQuery.sap.log.error("Barcode has not been recognized");
 				_log(ERROR, "Barcode has not been recognized", "zcustom.c4c.ui5lib.control.ZPlumberLeadPane._onScanSuccess1");
@@ -460,7 +460,7 @@ sap.ui.define([
 				//oBtn.mProperties.text = "Check-In";
 
 				sap.ui.core.BusyIndicator.hide(); //oControl.setBusy(false);
-				this._triggerLeadOnSave();
+				// don't save as requested -- this._triggerLeadOnSave();
 			}
 
 			oBtn.invalidate();
@@ -588,7 +588,7 @@ sap.ui.define([
 			this._setResultIntoNearest(sPostalCode, "/Root/ZRFL_PostCode_7834540e1c06fed78ba92204ff988027");
 
 			if (bTriggerSave) {
-				this._triggerLeadOnSave();
+				// don't save as requested -- this._triggerLeadOnSave();
 			}
 		},
 
