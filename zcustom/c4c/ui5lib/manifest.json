@@ -1,0 +1,49 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"id": "zcustom.c4c.ui5lib",
+		"type": "library",
+		"embeds": ["control/ZBarCodeScanner",
+				   "control/ZPlumberLeadPane"],
+		"applicationVersion": {
+			"version": "0.1.0"
+		},
+		"title": "{{lib.title}}",
+		"description": "{{lib.descr}}",
+		"openSourceComponents": [],
+		"resources": "resources.json",
+		"offline": true
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["base", "sap_hcb", "sap_belize", "sap_belize_plus"]
+	},
+	"sap.ui5": {
+		"resources": {
+			"js": [],
+			"css": []
+		},
+		"dependencies": {
+			"minUI5Version": "1.48.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.unified": {
+					"lazy": true
+				},
+				"sap.client.cod.newui.shared": {
+					"minVersion": ""
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		}
+	}
+}
